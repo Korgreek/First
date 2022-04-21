@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body{
+    background-color: transparent;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    .fa-solid .fa-bars{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .nav-ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0px;
+        list-style: none;
+        width: 100%;
+    }
+    .nav-ul a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: rgba(0,0,0,0.8);
+        width: 100%;
+        z-index: 11;
+        position: fixed;
+        transition: color .5s;
+    }
+    .nav-ul a:hover{
+        color:aqua;
+    }
+}
+@media screen and (max-width: 767px){
+    .nav-ul{
+        display: none;
+    }
+    .show{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 0px;
+        margin-top: 0px;
+        list-style: none;
+        background-color: rgba(0,0,0,0.9);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        position: fixed;
+        width: 100%;
+        z-index: 9;
+    }
+    .hamburger{
+        padding: 20px;
+        margin-left: 85%;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+        position:fixed;
+        top: 50px;
+        z-index: 10;
+    }
+    
+    .show li{
+        margin-top: 20px;
+    }
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/woman-1063100_1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.content-shadow-box{
+    background-color: rgba(0,0,0,0.8);
+        height: 100vh;
+        width: 100%;
+        position: relative;
+}
+.content-shadow{
+    background-color: rgba(0,0,0,0.8);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.content-shadow .content-text{
+    z-index: 1;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    top:100%;
+    transform: translate(-50%,-100%);
+    background-color: rgba(0,0,0,0.80);
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: .5s;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.content-shadow a:hover ~ .content-text{
+    height: 20%;
+    opacity: 1;
+}
+.content-shadow  a{
+    position: absolute;
+      color:white;
+      font-size: 30px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      transition: .5s;
+  }
+  .about-us{
+    background-image: url("../img/man-4035612_1920.jpg");
+}
+.prices{
+    background-image: url("../img/woman-837156_1920.jpg");
+}
+.contact{
+    background-image: url("../img/woman-1509956_1920.jpg");
+}
+.offer{
+    background-image: url("../img/sunset-570881_1920.jpg");
+}
+
+footer{
+    height: 15px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+
+}
+.company{
+    height: 100vh;
+    width: 100%;
+   background-color: rgb(214, 193, 193);
+   text-align: center;
+}
+.company i {
+    font-size: 30px;
+    margin-top: 30px;
+}
+.company p{
+    font-size: 24px;
+    line-height: 10vh;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
